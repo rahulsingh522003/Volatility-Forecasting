@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "volatility-modelling"
+version = "0.1.0"
+description = "Volatility modelling utilities for EWMA and GARCH analysis"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy",
+  "pandas",
+  "yfinance",
+  "matplotlib",
+  "scipy",
+  "arch",
+  "jupyter",
+]
+
+[tool.setuptools]
+py-modules = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
